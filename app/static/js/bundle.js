@@ -82,18 +82,9 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        'p',
 	        null,
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'About section! Go back to'
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/' },
-	          'Home'
-	        )
+	        'About section! Go back to'
 	      );
 	    }
 	  }]);
@@ -117,28 +108,9 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        'p',
 	        null,
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Hello Folks! Go back to'
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/' },
-	          'Home'
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/about' },
-	          'About'
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/not' },
-	          'Not Found'
-	        )
+	        'Hello Folks! Go back to'
 	      );
 	    }
 	  }]);
@@ -162,18 +134,9 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        'p',
 	        null,
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Invalid scope! Go back to'
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/' },
-	          'Home'
-	        )
+	        'Invalid scope! Go back to'
 	      );
 	    }
 	  }]);
@@ -199,6 +162,41 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/' },
+	                'Home'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/about' },
+	                'About'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/not' },
+	                '404'
+	              )
+	            )
+	          )
+	        ),
 	        this.props.children
 	      );
 	    }
