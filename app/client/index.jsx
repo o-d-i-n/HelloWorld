@@ -11,10 +11,7 @@ class About extends Component {
 
   render() {
     return (
-      <div>
-        <p>About section! Go back to</p>
-        <Link to={`/`}>Home</Link>
-      </div>
+      <p>About section! Go back to</p>
     )
   }
 
@@ -29,12 +26,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <p>Hello Folks! Go back to</p>
-        <Link to={`/`}>Home</Link>
-        <Link to={`/about`}>About</Link>
-        <Link to={`/not`}>Not Found</Link>
-      </div>
+      <p>Hello Folks! Go back to</p>
     )
   }
 
@@ -49,10 +41,7 @@ class NoMatch extends Component {
 
   render() {
     return (
-      <div>
-        <p>Invalid scope! Go back to</p>
-        <Link to={`/`}>Home</Link>
-      </div>
+      <p>Invalid scope! Go back to</p>
     )
   }
 
@@ -68,6 +57,13 @@ class Wrapper extends Component {
   render() {
     return (
       <div>
+        <div>
+          <ul>
+            <li><Link to={`/`}>Home</Link></li>
+            <li><Link to={`/about`}>About</Link></li>
+            <li><Link to={`/not`}>404</Link></li>
+          </ul>
+        </div>
         {this.props.children}
       </div>
     )
