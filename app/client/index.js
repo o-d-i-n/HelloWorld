@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, NotFoundRoute, Link, browserHistory } from 'react-router';
+import { RepoCard, RepoCardList } from './components/RepoCardComponents'
 
 class About extends Component {
 
@@ -26,7 +27,9 @@ class App extends Component {
 
   render() {
     return (
-      <p>Hello Folks! Go back to</p>
+      <div className="container">
+        <RepoCardList />
+      </div>
     )
   }
 
@@ -64,7 +67,7 @@ class Wrapper extends Component {
             <li><Link to={`/not`}>404</Link></li>
           </ul>
         </div>
-        {this.props.children}
+        { this.props.children }
       </div>
     )
   }
