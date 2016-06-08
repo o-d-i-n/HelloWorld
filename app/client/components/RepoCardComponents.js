@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
+import axios from 'axios'
 
 class RepoCard extends Component {
 
@@ -8,13 +10,20 @@ class RepoCard extends Component {
   }
 
   render() {
+    let cardImg = {
+      backgroundImage: 'url(' + this.props.content.img + ')',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      height: '200px'
+    }
     return (
       <div className="repo-card col-md-4 col-lg-4">
         <figure>
-		      <div className="pic">
-			       <div className="img"></div>
+		      <Link className="pic" to={`/not`}>
+			       <div style={ cardImg } className="img"></div>
 			       <span>{ this.props.content.desc }</span>
-          </div>
+          </Link>
 		      <figelement>
 			      <h3>{ this.props.content.name }</h3>
 			      <p>{ this.props.content.type }</p>
@@ -38,32 +47,18 @@ class RepoCardList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      "cards": [
-        {
-          "name": "HelloWorld",
-          "type": "Web-Application",
-          "desc": "A webapp built with trending frameworks",
-          "technologies": [
-            "bootstrap",
-            "css3",
-            "django",
-            "html5",
-            "react"
-          ]
-        },
-        {
-          "name": "EvilWords",
-          "type": "Command-Line Tool",
-          "desc": "Python-App that takes care of words you type",
-          "technologies": [
-            "python"
-          ]
-        }
-      ]
+      "cards": []
     }
   }
 
+  componentWillMount() {
+    axios.get('/static/dummydata/projects.json')
+      .then(res => this.setState(res.data))
+      .catch(res => console.log(res))
+  }
+
   render() {
+    console.log(this.state)
     return (
       <div className="row">
         {
