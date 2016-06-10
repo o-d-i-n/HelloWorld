@@ -11,15 +11,6 @@
       ]
     },
     {
-      "name": "billi",
-      "type": "Command-Line Tool",
-      "desc": "Modern `cat` for modern devs.",
-      "img": "/static/images/billi.png",
-      "technologies": [
-        "nodejs"
-      ]
-    },
-    {
       "name": "CloudShopper",
       "type": "Web/Mobile App",
       "desc": "An online companion to an offline shopping experience.",
@@ -86,6 +77,15 @@
         "css3",
         "react",
         "html5"
+      ]
+    },
+    {
+      "name": "nyan-cat",
+      "type": "Command-Line Tool",
+      "desc": "Modern `cat` for modern devs.",
+      "img": "/static/images/billi.png",
+      "technologies": [
+        "nodejs"
       ]
     },
     {
