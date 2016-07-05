@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, NotFoundRoute, Link, browserHistory } from 'react-router';
 import { RepoCard, RepoCardList } from './components/RepoCardComponents'
+import { AccCard, AccCardList } from './components/AccCardComponents'
 
 class About extends Component {
 
@@ -16,7 +17,9 @@ class About extends Component {
 
   render() {
     return (
-      <p>About section! Go back to</p>
+      <div className="container">
+        <AccCardList />
+      </div>
     )
   }
 
