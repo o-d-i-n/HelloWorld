@@ -23,14 +23,17 @@ class AccCard extends Component{
 				<span>{ this.props.content.name }</span>
 				<span>{ this.props.content.post }</span>
 				<div className="share">
-			      {
-			        this.props.content.contact.map((r,s) => {
-			        	return this.props.content.contact_link.map((v,k) => {
-			        		return <a key={s} className="contact" href={v}><i key={s} className={`fa fa-${r}-square`} aria-hidden="true"></i></a>
-			        	})
-			        })
-			      }
-			    </div>
+            {
+              this.props.content.contact.map((r,s) => {
+                return this.props.content.contact_link.map((v,k) => {
+                if(s == k){
+                  return <a key={s} className="contact" href={v}><i key={k} className={`fa fa-${r}-square`} aria-hidden="true"></i></a>
+                }
+                })
+              })
+            }
+        </div>
+
 			</div>
 		</figure>
       </div>
@@ -70,3 +73,4 @@ class AccCardList extends Component {
 }
 
 export { AccCard, AccCardList }
+

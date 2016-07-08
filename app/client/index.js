@@ -101,7 +101,7 @@ class Wrapper extends Component {
         <div className="main-nav">
           <ul>
             <li className={ this.state.nav["Home"] ? `active` : `off` }><Link to={`/`}>Home</Link></li>
-            <li className={ this.state.nav["About"] ? `active` : `off` }><Link to={`/about`}>About</Link></li>
+            <li className={ this.state.nav["About"] ? `active` : `off` }><Link to={`/about`}>Collabs</Link></li>
             <li className={ this.state.nav["404"] ? `active` : `off` }><Link to={`/not`}>404</Link></li>
           </ul>
         </div>
