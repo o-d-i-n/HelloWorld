@@ -16,10 +16,10 @@ class AccCard extends Component{
 		}
 
 		return (
-      <div className="mem-card col-md-4 col-lg-4 col-xs-8 col-centered">
+      <div className="mem-card col-md-3 col-lg-3 col-xs-8 col-xs-offset-2 col-md-offset-0">
       	<figure>
-		    <Link className="img front" style={ bgImg } to={`/not`}></Link>
-			<div className="img back">
+		    <Link className="img front img-circle" style={ bgImg } to={`/not`}></Link>
+			<div className="img back img-circle">
 				<span>{ this.props.content.name }</span>
 				<span>{ this.props.content.post }</span>
 				<div className="share">

@@ -162,65 +162,61 @@ body {
 }
 
 .mem-card{
-	/*width: 300px;*/
-	/*height: 300px;*/
-	/*margin-right: 10px;*/
 	margin-bottom: 10px;
-	/*position: relative;*/
 	font-size: 2em;
 	font-family: sans-serif;
 	overflow: hidden;
 
 	-webkit-perspective: 2000;
+  perspective: 2000;
 }
 
 .mem-card > figure{
-	width: 300px;
 	height: 300px;
-	margin: 0px;
 }
 
 .mem-card .img{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
 	height: 100%;
 	line-height: 300px;
 	text-align: center;
-	border-radius: 100%;
 	overflow: hidden;
 
 	-webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .mem-card:hover .front{
 	z-index: 2;
 	cursor: pointer;
 	-webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .mem-card:hover .back{
 	z-index: 4;
 	-webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
 .mem-card .front{
 	z-index: 5;
-	/*background:  url(images/user.jpg) center ;*/
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-
+  width: 90% !important;
+	height: 90% !important;
 }
 
 .mem-card .back{
 	z-index: 1;
 	background: rgba(0,0,0, .7);
-	/*position: relative;*/
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 	-webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .mem-card .back .share{
@@ -238,8 +234,6 @@ body {
 	float: left;
 	width: 40px;
 	height: 40px;
-	/*border-radius: 100%;*/
-	/*background-color: white;*/
 	left: 80px;
 	margin-left: 20px;
 	top: 20px;
@@ -265,6 +259,13 @@ body {
 	color: yellow;
 	display: inline-block;
 	font-size: .6em;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.mem-card>figure{
+		height: 68vw;
+	}
 }
 
 /*<!-- <div style={ cardPic } className="img front"></div> -->*/
