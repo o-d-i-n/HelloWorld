@@ -27,7 +27,7 @@ class AccCard extends Component{
               this.props.content.contact.map((r,s) => {
                 return this.props.content.contact_link.map((v,k) => {
                 if(s == k){
-                  return <a key={s} className="contact" href={v}><i key={k} className={`fa fa-${r}-square`} aria-hidden="true"></i></a>
+                  return <a key={s} className="contact" href={v}><i key={k} className={`fa fa-${r}-square fa-lg`} aria-hidden="true"></i></a>
                 }
                 })
               })

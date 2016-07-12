@@ -232,15 +232,21 @@ body {
 .share .contact {
 	position: relative;
 	float: left;
-	width: 40px;
-	height: 40px;
-	left: 80px;
-	margin-left: 20px;
+	width: 60px;
+	height: 60px;
+	left: 60px;
+	margin-left: 00px;
 	top: 20px;
+	color: grey;
+}
+
+.share .contact .fa{
+	position: absolute;
 }
 
 .share .contact:hover{
 	cursor: pointer;
+	color: white;
 }
 
 .mem-card .back span{
