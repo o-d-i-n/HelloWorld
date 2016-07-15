@@ -231,17 +231,21 @@ body {
 
 .share .contact {
 	position: relative;
-	float: left;
+	/*float: left;*/
 	width: 60px;
 	height: 60px;
-	left: 60px;
-	margin-left: 00px;
-	top: 20px;
+	/*left: 60px;*/
+	top: -110px;
+	/*top: 20px;*/
 	color: grey;
 }
 
+.share .contact:nth-child(2){
+	padding-left: 10px;
+}
+
 .share .contact .fa{
-	position: absolute;
+	/*position: absolute;*/
 }
 
 .share .contact:hover{
