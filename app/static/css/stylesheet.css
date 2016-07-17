@@ -256,23 +256,33 @@ body {
 	color: white;
 }
 
-.mem-card .back span{
-	position: relative;
+.mem-card .back p {
 	color: white;
-	width: 100%;
 	height: 30px;
-	top: -330px;
+	width: 100%;
+      	margin: 0 !important;
+  	padding: 0 !important;
+       	line-height: 30px;
+	margin-top: 30px;
+	white-space: nowrap;
 }
 
-.mem-card .back span:nth-child(1){
-	display: block;
+.mem-card .back p:nth-child(1) {
 }
-
-.mem-card .back span:nth-child(2){
+.back p:nth-child(2) {
 	color: yellow;
-	display: inline-block;
-	font-size: .6em;
+      	font-size: 0.6em;
 }
+.mem-card .back .info {
+ 	height: 70%;
+	margin-left: auto;
+ 	margin-right: auto;
+     	position: absolute;
+ 	text-align: center !important;
+     	top: 0;
+    	width: 100%;
+    	padding-top: 40%;
+   }
 
 
 /*<!-- <div style={ cardPic } className="img front"></div> -->*/
