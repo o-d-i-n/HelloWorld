@@ -161,7 +161,7 @@ body {
   opacity: 1;
 }
 
-.mem-card{
+.mem-card {
 	margin-bottom: 30px;
 	font-size: 2em;
 	font-family: sans-serif;
@@ -171,12 +171,12 @@ body {
   perspective: 2000;
 }
 
-.mem-card > figure{
+.mem-card > figure {
 	position: relative;
 	height: 0px;
 }
 
-.mem-card .img{
+.mem-card .img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -188,27 +188,27 @@ body {
   transition: all 1s;
 }
 
-.mem-card:hover .front{
+.mem-card:hover .front {
 	z-index: 2;
 	cursor: pointer;
 	-webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
-.mem-card:hover .back{
+.mem-card:hover .back {
 	z-index: 4;
 	-webkit-transform: rotateY(360deg);
   transform: rotateY(360deg);
 }
 
-.mem-card .front{
+.mem-card .front {
 	z-index: 5;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: center;
 }
 
-.mem-card .back{
+.mem-card .back {
 	z-index: 1;
 	height: 0;
 	background: rgba(0,0,0, .7);
@@ -216,7 +216,7 @@ body {
   transform: rotateY(180deg);
 }
 
-.mem-card .back .share{
+.mem-card .back .share {
 	width: 100%;
 	height: 30%;
 	background-color: rgba(0,0,0,.5);
@@ -226,7 +226,7 @@ body {
 	border-radius: 0 !important;
 }
 
-.img-circle{
+.img-circle {
 	width: 100%;
 	height: auto;
 	padding-top: 100%;
@@ -234,65 +234,45 @@ body {
 
 .share .contact {
 	position: relative;
-	/*float: left;*/
 	width: 60px;
 	height: 60px;
-	/*left: 60px;*/
 	top: -110px;
-	/*top: 20px;*/
 	color: grey;
 }
 
-.share .contact:nth-child(2){
+.share .contact:nth-child(2) {
 	padding-left: 10px;
 }
 
-.share .contact .fa{
-	/*position: absolute;*/
-}
-
-.share .contact:hover{
+.share .contact:hover {
 	cursor: pointer;
 	color: white;
 }
 
 .mem-card .back p {
 	color: white;
+	opacity: 0.7;
 	height: 30px;
 	width: 100%;
-      	margin: 0 !important;
-  	padding: 0 !important;
-       	line-height: 30px;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 30px;
 	margin-top: 30px;
 	white-space: nowrap;
 }
 
-.mem-card .back p:nth-child(1) {
-}
 .back p:nth-child(2) {
 	color: yellow;
       	font-size: 0.6em;
 }
+
 .mem-card .back .info {
  	height: 70%;
 	margin-left: auto;
  	margin-right: auto;
-     	position: absolute;
+  position: absolute;
  	text-align: center !important;
-     	top: 0;
-    	width: 100%;
-    	padding-top: 40%;
-   }
-
-
-/*<!-- <div style={ cardPic } className="img front"></div> -->*/
-/*
-<div className="share">
-			      {
-			        this.props.content.contact.map((r,s) => {
-			        	return this.props.content.contact_link.map((v,k) => {
-			        		return <a key={k} className="contact" href="v"><i key={s} className={`fa fa-${r}-square`} aria-hidden="true"></i></a>
-			        	})
-			        })
-			      }
-			    </div>*/
+  top: 0;
+  width: 100%;
+  padding-top: 40%;
+}
