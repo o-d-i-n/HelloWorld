@@ -16,8 +16,8 @@ class AccCard extends Component{
 		}
 
 		return (
-      <div className="mem-card col-md-3 col-lg-3 col-xs-8 col-xs-offset-2 col-md-offset-0">
-      	<figure>
+      <div className="mem-card col-sm-6 col-md-3 col-lg-3 col-xs-12">
+      	<figure className="img-circle">
 		    <Link className="img front img-circle" style={ bgImg } to={`/not`}></Link>
 			<div className="img back img-circle">
 				<span>{ this.props.content.name }</span>

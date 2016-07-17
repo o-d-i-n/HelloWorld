@@ -162,7 +162,7 @@ body {
 }
 
 .mem-card{
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	font-size: 2em;
 	font-family: sans-serif;
 	overflow: hidden;
@@ -172,14 +172,14 @@ body {
 }
 
 .mem-card > figure{
-	height: 300px;
+	position: relative;
+	height: 0px;
 }
 
 .mem-card .img{
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100%;
 	line-height: 300px;
 	text-align: center;
 	overflow: hidden;
@@ -206,15 +206,12 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-  width: 90% !important;
-	height: 90% !important;
 }
 
 .mem-card .back{
 	z-index: 1;
+	height: 0;
 	background: rgba(0,0,0, .7);
-	width: 90%;
-	height: 90%;
 	-webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -227,6 +224,12 @@ body {
 	bottom: 0;
 	left: 0;
 	border-radius: 0 !important;
+}
+
+.img-circle{
+	width: 100%;
+	height: auto;
+	padding-top: 100%;
 }
 
 .share .contact {
@@ -258,7 +261,7 @@ body {
 	color: white;
 	width: 100%;
 	height: 30px;
-	top: -50px;
+	top: -330px;
 }
 
 .mem-card .back span:nth-child(1){
@@ -271,12 +274,6 @@ body {
 	font-size: .6em;
 }
 
-@media only screen and (max-width: 768px)
-{
-	.mem-card>figure{
-		height: 68vw;
-	}
-}
 
 /*<!-- <div style={ cardPic } className="img front"></div> -->*/
 /*
