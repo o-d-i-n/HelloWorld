@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
+
+section.content{
+    background-color: white;
+}
+
+.tagline{
+    font-weight: normal;
+    font-family: 'Roboto';
+}
+
+section.content ul.categories{
+  display: flex;
+  flex-flow: wrap;
+  list-style-type: none;
+  padding-left: 0;
+}
+section.content ul.categories>li{
+    min-width:50px;
+    margin-right:10px;
+    padding:0% 2%;
+    border-radius:5px;
+    text-align: center;
+    background-color:#a3a3a3;
+    color:white;
+}
+
+section.content .icon{
+  min-height: 200px !important;
+}
+
+.git-details div{
+    margin: 10px 0px 0px 0px;
+    padding-left: 0;
+}
+
+h7{
+    font-family: sans-serif;
+    font-weight: bold;
+    padding:0px;
+}
+
+.github{
+    margin-left: auto;
+    height:60px;
+}
+
+.github>img{
+    height: 48px;
+}
+.gallery>ul{
+    display:flex;
+    flex-flow:row;
+    list-style-type:none;
+    padding-left:0;
+    overflow-x:scroll;
+}
+
+.gallery>ul>li{
+    margin-right: 10px;
+}
+
+.gallery>ul>li>img{
+    height: 200px;
+}
+
+.details, .details-content{
+    font-size: 15px;
+}
+
+.details-heading{
+	text-transform: capitalize;
+}
+
+section.meta>ul{
+    display:flex;
+    flex-flow:row wrap;
+    list-style-type:none;
+    padding-left: 0;
+}
+
+section.meta>ul>li{
+}

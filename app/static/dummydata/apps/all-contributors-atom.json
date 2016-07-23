@@ -1,0 +1,19 @@
+{
+  "name": "all-contributors-atom",
+  "type": "Atom Package",
+  "desc": "Atom plugin for all-contributors spec.",
+  "icon": "/static/images/allcontributors.gif",
+  "images": [],
+  "technologies": [
+    "coffeescript",
+    "atom"
+  ],
+  "long_desc": "",
+  "contributors": [],
+  "meta": {
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

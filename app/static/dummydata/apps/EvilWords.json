@@ -1,0 +1,18 @@
+{
+  "name": "EvilWords",
+  "type": "Command-Line Tool",
+  "desc": "Python-App that takes care of words you type.",
+  "icon": "/static/images/DevBible.jpg",
+  "images": [],
+  "technologies": [
+    "python"
+  ],
+  "long_desc": "",
+  "contributors": [],
+  "meta":{
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

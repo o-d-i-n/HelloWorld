@@ -1,0 +1,18 @@
+{
+  "name": "is-alpha",
+  "type": "JavaScript Module",
+  "desc": "String Validation Module.",
+  "icon": "/static/images/is-alpha.jpg",
+  "images": [],
+  "technologies": [
+    "javascript"
+  ],
+  "long_desc": "",
+  "contributors": [],
+  "meta": {
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

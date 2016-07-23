@@ -20,7 +20,7 @@ class RepoCard extends Component {
     return (
       <div className="repo-card col-md-4 col-lg-4">
         <figure>
-		      <Link className="pic" to={`/not`}>
+		      <Link className="pic" to={`/apps/${this.props.content.name}`}>
 			       <div style={ cardImg } className="img"></div>
 			       <span>{ this.props.content.desc }</span>
           </Link>
@@ -63,6 +63,7 @@ class RepoCardList extends Component {
       <div className="row">
         {
           this.state.cards.map((c,k) => {
+	    console.log(c+":"+k)
             return <RepoCard key={k} content={c} />
           })
         }

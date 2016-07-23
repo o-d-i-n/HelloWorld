@@ -3,6 +3,28 @@ import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, NotFoundRoute, Link, browserHistory } from 'react-router';
 import { RepoCard, RepoCardList } from './components/RepoCardComponents'
 import { AccCard, AccCardList } from './components/AccCardComponents'
+import { RepoDetailsHeader, RepoDetails } from './components/RepoDetails.js'
+
+class Details extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  componentWillMount() {
+    this.props.navUpdate("TestRepo")
+  }
+
+  render() {
+    return (
+      <section className="content col-md-offset-2 col-md-8">
+        <RepoDetails n={this.props.params.appName}/>
+      </section>
+    )
+  }
+
+}
 
 class About extends Component {
 
@@ -84,6 +106,7 @@ class Wrapper extends Component {
     console.log(newRoute)
     let home = newRoute === "Home" ? true : false
     let about = newRoute === "About" ? true : false
+    let testrepo = newRoute === "TestRepo" ? true : false
     let notFound = newRoute === "404" ? true : false
     this.setState({
       "nav": {
@@ -117,6 +140,7 @@ ReactDOM.render((
     <Route path="/" component={Wrapper}>
       <IndexRoute component={App}/>
       <Route path="/about" component={About}/>
+      <Route path="/apps/:appName" component = {Details}/>
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>

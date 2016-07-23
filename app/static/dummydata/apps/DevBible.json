@@ -1,0 +1,20 @@
+{
+	"name": "DevBible",
+	"type": "Devlopment Guide",
+	"desc": "For the devs, by the devs.",
+	"icon": "/static/images/DevBible.jpg",
+	"images": [
+	"/static/images/DevBible.jpg",
+	"/static/images/DevBible.jpg",
+	"/static/images/DevBible.jpg"
+	],
+	"technologies": [],
+	"long_desc": "Lorem ipsum dolor sit. Class fusce augue egestas rhoncus rutrum est ut sollicitudin. Tempor arcu diam est euismod lacus hac tristique, etiam netus odio. Euismod quam quis cum nisi. Enim montes, dui potenti nullam nam. Curae. Suspendisse nunc. Vel vestibulum ut, praesent praesent, ut elit primis mus pede pharetra ullamcorper, eni quam ultricies fringilla. Pellentesque tortor risus potenti gravida diam. Dapibus mi facilisi luctus, mattis massa pulvinar. Duis dignissim morbi, proin dui urna posuere. Fusce cubilia aenean. Aenean est natoque cursus. Non, nec hendrerit dui nulla, mus. At pellentesque nibh integer ante, leo enim pellentesque parturient. Nostra felis iaculis vel inceptos natoque ut.\nFaucibus ullamcorper, sed ad amet pulvinar fusce magna etiam faucibus. Commodo metus urna vivamus. Leo. Leo congue nullam lacus. Magna diam libero, mi fermentum donec dignissim sit, euismod eleifend ante mus tellus tempor vitae. Integer. Duis felis. Elit at arcu bibendum tempus, auctor. Proin et felis eget ac consectetuer montes. Erat sit auctor mollis convallis. Per malesuada nisi, potenti et, at enim ante. Imperdiet dis conubia in elit pharetra.\n  Ad pede vitae tortor parturient vitae. Rutrum vulputate nam, pretium rutrum velit aenean. Ante ve facilisi ante nostra dis. Phasellus. Nisi viverra ac. Parturient. Ve nonummy odio, porta vehicula, est. Elit fames purus integer viverra, cursus fusce, aptent. Mauris quisque lacinia varius lacus condimentum nam, ad aliquet. Leo maecenas fermentum magnis augue magna enim pharetra tristique. Condimentum ipsum habitasse velit eget nascetur dignissim sed est feugiat molestie fames ad, orci metus, malesuada.",
+	"contributors": [],
+	"meta": {
+		"updated": "20-Jul-2016",
+		"size": "3M",
+		"version": "1.0.0",
+		"platform": "All"
+	}
+}

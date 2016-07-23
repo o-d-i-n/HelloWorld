@@ -1,0 +1,22 @@
+{
+  "name": "HelloWorld",
+  "type": "Web-Application",
+  "desc": "A webapp built with trending frameworks.",
+  "icon": "/static/images/odin2.png",
+  "images": [],
+  "technologies": [
+    "bootstrap",
+    "css3",
+    "django",
+    "html5",
+    "react"
+  ],
+  "long_desc": "",
+  "contributors": [],
+  "meta":{
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

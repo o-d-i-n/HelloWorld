@@ -1,0 +1,18 @@
+{
+  "name": "nyan-cat",
+  "type": "Command-Line Tool",
+  "desc": "Modern `cat` for modern devs.",
+  "icon": "/static/images/billi.png",
+  "images": [],
+  "technologies": [
+    "nodejs"
+  ],
+  "long_desc": "",
+  "contributors": [],
+  "meta": {
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

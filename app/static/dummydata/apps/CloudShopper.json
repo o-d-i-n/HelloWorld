@@ -1,0 +1,20 @@
+{
+  "name": "CloudShopper",
+  "type": "Web/Mobile App",
+  "desc": "An online companion to an offline shopping experience.",
+  "icon": "/static/images/DevBible.jpg",
+  "images": [],
+  "technologies": [
+    "css3",
+    "angularjs",
+    "html5"
+  ],
+  "long_desc": "",
+  "contributors":[],
+  "meta":{
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

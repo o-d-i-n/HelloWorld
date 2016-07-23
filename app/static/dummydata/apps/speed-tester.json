@@ -1,0 +1,18 @@
+{
+  "name": "speed-tester",
+  "type": "Browser-side API",
+  "desc": "An accurate and basic speed tester.",
+  "icon": "/static/images/speed-tester.jpg",
+  "images": [],
+  "technologies": [
+    "javascript"
+  ],
+  "long_desc": "",
+  "contributors": [],
+  "meta": {
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}
