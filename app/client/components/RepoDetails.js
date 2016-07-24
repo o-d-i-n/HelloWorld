@@ -30,10 +30,10 @@ class RepoDetailsHeader extends Component {
             </div>
 
             <div className="text-right col-md-6">
-              <button className="github">
+              <a className="btn btn-default btn-lg github" href={`https://www.github.com/o-d-i-n/${this.props.name}`}>
                 <img src="/static/images/GitHub-Mark-64px.png"/>
                 <img src="/static/images/GitHub_Logo.png"/>
-              </button>
+              </a>
             </div>
           </div>
         </div>

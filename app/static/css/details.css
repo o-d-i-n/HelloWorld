@@ -1,23 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
 
-section.content{
-    background-color: white;
+#details .row{
+	margin:0;
 }
 
-.tagline{
+#details {
+    background-color: white;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#details .tagline{
     font-weight: normal;
     font-family: 'Roboto';
 }
 
-section.content ul.categories{
+#details  ul.categories{
   display: flex;
   flex-flow: wrap;
   list-style-type: none;
   padding-left: 0;
 }
-section.content ul.categories>li{
+#details  ul.categories>li{
     min-width:50px;
     margin-right:10px;
+    margin-top: 5px;
     padding:0% 2%;
     border-radius:5px;
     text-align: center;
@@ -25,30 +32,37 @@ section.content ul.categories>li{
     color:white;
 }
 
-section.content .icon{
+#details  .icon{
   min-height: 200px !important;
 }
 
-.git-details div{
+#details .git-details div{
     margin: 10px 0px 0px 0px;
     padding-left: 0;
 }
 
-h7{
+#details h7{
     font-family: sans-serif;
     font-weight: bold;
     padding:0px;
 }
 
-.github{
+#details .github{
     margin-left: auto;
     height:60px;
 }
 
-.github>img{
+#details .github>img{
     height: 48px;
+		position: relative;
+		bottom: 6px;
 }
-.gallery>ul{
+
+#details>div>*:not(hr){
+	margin-top: 2% !important;
+}
+
+#details .gallery>ul{
     display:flex;
     flex-flow:row;
     list-style-type:none;
@@ -56,28 +70,33 @@ h7{
     overflow-x:scroll;
 }
 
-.gallery>ul>li{
+#details .gallery>ul>li{
     margin-right: 10px;
 }
 
-.gallery>ul>li>img{
+#details .gallery>ul>li>img{
     height: 200px;
 }
 
-.details, .details-content{
+#details .details, .details-content{
     font-size: 15px;
 }
 
-.details-heading{
+#details .details-heading{
 	text-transform: capitalize;
 }
 
-section.meta>ul{
-    display:flex;
-    flex-flow:row wrap;
+#details section.meta>ul{
     list-style-type:none;
     padding-left: 0;
 }
 
-section.meta>ul>li{
+@media only screen and (max-width:768px){
+	#details .github{
+		height:10%;
+	}
+
+	#details .meta>header{
+		text-align: center;
+	}
 }

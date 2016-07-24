@@ -18,7 +18,7 @@ class Details extends Component {
 
   render() {
     return (
-      <section className="content col-md-offset-2 col-md-8">
+      <section id="details" className="content col-md-offset-2 col-md-8">
         <RepoDetails n={this.props.params.appName}/>
       </section>
     )
