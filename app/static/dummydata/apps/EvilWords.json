@@ -7,7 +7,7 @@
   "technologies": [
     "python"
   ],
-  "long_desc": "",
+  "long_desc": "# EvilWords\nA tiny program that reminds you when you are about to type words you should not :)\n\n## Platform\n- Linux (Ubuntu)    : READY\n- Windows: Comming Soon\n\n## Commands\n- 'close'           : Close Program\n- 'add _word_>'     : Add word to dicitionary\n- 'enable _word_'   : unmute word\n- 'disable _word_'  : mute word\n",
   "contributors": [],
   "meta":{
 		"updated": "",

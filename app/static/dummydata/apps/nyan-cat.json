@@ -3,11 +3,13 @@
   "type": "Command-Line Tool",
   "desc": "Modern `cat` for modern devs.",
   "icon": "/static/images/billi.png",
-  "images": [],
+  "images": [
+	  "https://www.github.com/o-d-i-n/nyan-cat/raw/master/docs/screenshot1.png"
+  ],
   "technologies": [
     "nodejs"
   ],
-  "long_desc": "",
+  "long_desc": "# Billi 😽\n\nModern `cat` for developers.\n\nEver used cat for quick code reveal and thought \"Man, wouldn't it be cool if some idiots wasted their time on building an cli tool to generate color coded output for `cat`\" ? Well, we are those idiots and this projects aims to cater the need.\n\n#### Get Started\n`npm install -g`\n\n#### Usage\n```bash\nbilli package.json\n```\n\nIf you wish to replace `cat` with `billi` then you can add an alias in your .bashrc/.bash_profile\n```bash\necho \"alias cat=billi\" >> ~/.bash_profile\n```\n\n#### Contributors\n<!-- Contributors START\nDivjot_Singh bogas04 https://github.com/bogas04 code doc\nMayank_Badola mbad0la https://github.com/mbad0la code doc\nContributors END -->\n<!-- Contributors table START -->\n| [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](https://github.com/bogas04)<br />[💻](https://github.com/bogas04/billi/commits?author=bogas04) [📖](https://github.com/bogas04/billi/commits?author=bogas04) | [![Mayank Badola](https://avatars.githubusercontent.com/mbad0la?s=100)<br /><sub>Mayank Badola</sub>](https://github.com/mbad0la)<br />[💻](https://github.com/bogas04/billi/commits?author=mbad0la) [📖](https://github.com/bogas04/billi/commits?author=mbad0la) |\n| :---: | :---: |\n<!-- Contributors table END -->\n* [Mohit Sharma](https://github.com/MohitS10) also contributed on code.\n\n#### Project Status\nMaintainer : [Mayank Badola](https://github.com/mbad0la) <mbad0la@outlook.com>\n",
   "contributors": [],
   "meta": {
 		"updated": "",

@@ -86,11 +86,26 @@
 	text-transform: capitalize;
 }
 
-#details section.meta>ul{
+#details section.metal{
     list-style-type:none;
     padding-left: 0;
 }
 
+tr:nth-child(even){
+	background-color: #e2e2e2;
+}
+
+td, th{
+	border-collapse: separate;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: left !important;
+	border: 1px solid #e2e2e2;
+}
+
+table{
+	table-layout: auto;
+}
 @media only screen and (max-width:768px){
 	#details .github{
 		height:10%;

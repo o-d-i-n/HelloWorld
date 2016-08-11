@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Markdown } from '../utils/Markdown.js'
 import axios from 'axios'
 
 class RepoDetailsHeader extends Component {
@@ -25,8 +26,8 @@ class RepoDetailsHeader extends Component {
 
           <div className="row git-details">
             <div className="col-md-6">
-              <h7>Contributers</h7>
-              <p>{this.props.contributors}</p>
+	    {/*<h7>Contributers</h7>
+              <p>{this.props.contributors}</p>*/}
             </div>
 
             <div className="text-right col-md-6">
@@ -76,7 +77,7 @@ class RepoDetailsDesciption extends Component {
 	render() {
 		return(
 			<div className="details row">
-			{this.props.long_desc.split("\n").map(p=><p>{p}</p>)}
+			<Markdown desc={this.props.long_desc}/>
 			</div>
 		)
 	}
@@ -141,7 +142,7 @@ class RepoDetails extends Component {
 				<Gallery images={this.state.images}/>
 				<RepoDetailsDesciption long_desc={this.state.long_desc} />
 				<hr/>
-				<RepoDetailsMeta meta={this.state.meta}/>
+				{/*		<RepoDetailsMeta meta={this.state.meta}/>*/}
 			</div>
     )
   }
