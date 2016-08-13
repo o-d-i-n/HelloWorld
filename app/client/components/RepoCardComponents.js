@@ -58,12 +58,10 @@ class RepoCardList extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <div className="row">
         {
           this.state.cards.map((c,k) => {
-	    console.log(c+":"+k)
             return <RepoCard key={k} content={c} />
           })
         }

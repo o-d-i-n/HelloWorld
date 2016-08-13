@@ -3,14 +3,10 @@
   "type": "Browser-side API",
   "desc": "An accurate and basic speed tester.",
   "icon": "/static/images/speed-tester.jpg",
-  "images": [
-	  "https://www.github.com/o-d-i-n/speed-tester/raw/master/img/screencapture-www-prabhakargupta-com-projects-speed-tester-index-html-1444595587128.png",
-	  "https://www.github.com/o-d-i-n/speed-tester/raw/master/img/screencapture-www-prabhakargupta-com-projects-speed-tester-index-html-1444595618893.png"
-  ],
   "technologies": [
     "javascript"
   ],
-  "long_desc": "# Basic Speed Tester\n  An accurate and basic speed tester\n  \n  Without having to host a SpeedOfMe speed test on your server, you are now able to run a [SpeedOf.Me](http://www.speedof.me) speed test right from your website. It is a JavaScript speed test API \n  \n  - - - - ",
+  "long_desc": "# Basic Speed Tester\n  An accurate and basic speed tester\n  \n  Without having to host a SpeedOfMe speed test on your server, you are now able to run a [SpeedOf.Me](http://www.speedof.me) speed test right from your website. It is a JavaScript speed test API \n\n",
   "contributors": [],
   "meta": {
 		"updated": "",

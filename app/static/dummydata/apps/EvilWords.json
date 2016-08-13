@@ -2,12 +2,11 @@
   "name": "EvilWords",
   "type": "Command-Line Tool",
   "desc": "Python-App that takes care of words you type.",
-  "icon": "/static/images/DevBible.jpg",
-  "images": [],
+  "icon": "/static/images/evilWords.jpg",
   "technologies": [
     "python"
   ],
-  "long_desc": "# EvilWords\nA tiny program that reminds you when you are about to type words you should not :)\n\n## Platform\n- Linux (Ubuntu)    : READY\n- Windows: Comming Soon\n\n## Commands\n- 'close'           : Close Program\n- 'add _word_>'     : Add word to dicitionary\n- 'enable _word_'   : unmute word\n- 'disable _word_'  : mute word\n",
+  "long_desc": "# EvilWords \n\n",
   "contributors": [],
   "meta":{
 		"updated": "",

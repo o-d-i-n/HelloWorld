@@ -3,19 +3,16 @@
   "type": "Atom Package",
   "desc": "Atom plugin for all-contributors spec.",
   "icon": "/static/images/allcontributors.gif",
-  "images": [
-	  "https://www.github.com/o-d-i-n/all-contributors-atom/raw/master/allcontributors.gif"
-  ],
   "technologies": [
     "coffeescript",
     "atom"
   ],
-  "long_desc": "Atom package for easy implementation of all-contributors spec within atom editor\n  \n  ### Usage\n  Open a project using (Why? [#1](https://github.com/o-d-i-n/all-contributors-atom/issues/1))\n  \n  ```bash\n  atom ProjectName\n  ```\n  \n  in your terminal and paste the following towards the end:\n  \n  ```html\n  <!-- Contributors START\n  fname_mname_lname githubUsername websiteLink contributionType1 contributionType2\n  fname_mname_lname githubUsername websiteLink contributionType1 contributionType5 contributionType7\n  fname_mname_lname githubUsername websiteLink contributionType3\n  Contributors END -->\n  <!-- Contributors table START -->\n  <!-- Contributors table END -->\n  This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.\n  ```\n  Hit `ctrl+alt+p` to parse the contributors list to build contributors' table as specified in the [all-contributors spec](https://github.com/kentcdodds/all-contributors).\n  \n  You can reduce the boilerplate to only adding contributers details by using **addcon-i** snippet on an markdown file. The snippet produces:\n  \n  ```html\n  <!-- Contributors START\n  Contributors END -->\n  <!-- Contributors table START -->\n  <!-- Contributors table END -->\n  This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.\n  ```\n  #### Adding a contributor\n  Inside the _Contributors START_ comment, start from a newline, the name of the person concatenated by underscore for breaks(eg. Mayank_Badola), his/her github username, his/her website url and all the types of contributions made by that user.  \n  Make sure you seperate these details by a space character.(eg. Mayank_Badola mbad0la http://mbad0la.github.io code doc)  \n  Press `ctrl+alt+p` to refresh the tables.\n  \n  #### Contribution Types\n  Type | Represents |\n  :---: | :---:\n  code | Code\n  utility | Plugin/utility libraries\n  tools | Tools\n  infra | Infrastructure (Hosting, Build-Tools, etc)\n  doc | Documentation\n  translation | Translation\n  answers | Answering Questions (in Issues, Stack Overflow, Gitter, Slack, etc.)\n  tests | Tests\n  bug | Bug reports\n  example | Examples\n  blogpost | Blogposts\n  tutorial | Tutorials\n  video | Videos\n  talks | Talks\n  design | Design\n  prReview | Reviewed Pull Requests\n  \n  #### Contributors\n  | [![Mayank Badola](https://avatars.githubusercontent.com/mbad0la?s=100)<br /><sub>Mayank Badola</sub>](http://mbad0la.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=mbad0la) | [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](http://bogas04.github.io)<br />[💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=bogas04) | [![Tam Love](https://avatars.githubusercontent.com/taml?s=100)<br /><sub>Tam Love</sub>](https://github.com/taml)<br /> [💻](https://github.com/o-d-i-n/all-contributors-atom/commits?author=taml) [📖](https://github.com/o-d-i-n/all-contributors-atom/commits?author=taml) |\n  | :---: | :---: | :---: |\n  \n  Any further contributions are more than welcome to help make this utility more awesome!\n  ",
+  "long_desc": "# All-contributors-atom \n\n",
   "contributors": [],
   "meta": {
-		"updated": "",
-		"size": "",
-		"version": "",
-		"platform": ""
+		"updated": "Now",
+		"size": "1 MB",
+		"version": "0.0.1",
+		"platform": "Ubuntu"
 	}
 }

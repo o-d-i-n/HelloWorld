@@ -26,7 +26,7 @@ class Details extends Component {
 
 }
 
-class About extends Component {
+class People extends Component {
 
   constructor(props) {
     super(props)
@@ -34,7 +34,7 @@ class About extends Component {
   }
 
   componentWillMount() {
-    this.props.navUpdate("About")
+    this.props.navUpdate("People")
   }
 
   render() {
@@ -94,7 +94,7 @@ class Wrapper extends Component {
     this.state = {
       "nav": {
         "Home": true,
-        "About": false,
+        "People": false,
         "404": false
       }
     }
@@ -105,26 +105,25 @@ class Wrapper extends Component {
   changeRoute(newRoute) {
     console.log(newRoute)
     let home = newRoute === "Home" ? true : false
-    let about = newRoute === "About" ? true : false
+    let people = newRoute === "People" ? true : false
     let testrepo = newRoute === "TestRepo" ? true : false
     let notFound = newRoute === "404" ? true : false
     this.setState({
       "nav": {
         "Home": home,
-        "About": about,
+        "People": people,
         "404": notFound
       }
     })
   }
 
   render() {
-    console.log("Main rendered")
     return (
       <div>
         <div className="main-nav">
           <ul>
             <li className={ this.state.nav["Home"] ? `active` : `off` }><Link to={`/`}>Home</Link></li>
-            <li className={ this.state.nav["About"] ? `active` : `off` }><Link to={`/about`}>Collabs</Link></li>
+            <li className={ this.state.nav["People"] ? `active` : `off` }><Link to={`/people`}>People</Link></li>
             <li className={ this.state.nav["404"] ? `active` : `off` }><Link to={`/not`}>404</Link></li>
           </ul>
         </div>
@@ -139,8 +138,8 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={Wrapper}>
       <IndexRoute component={App}/>
-      <Route path="/about" component={About}/>
-      <Route path="/apps/:appName" component = {Details}/>
+      <Route path="/people" component={People}/>
+      <Route path="/apps/:appName" component={Details}/>
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>

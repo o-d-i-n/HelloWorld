@@ -53,7 +53,7 @@ class AccCardList extends Component {
   }
 
   componentWillMount() {
-    axios.get('/static/dummydata/projects2.json')
+    axios.get('/static/dummydata/collaborators.json')
       .then(res => this.setState(res.data))
       .catch(res => console.log(res))
   }
@@ -74,4 +74,3 @@ class AccCardList extends Component {
 }
 
 export { AccCard, AccCardList }
-

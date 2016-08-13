@@ -3,11 +3,10 @@
   "type": "JavaScript Module",
   "desc": "String Validation Module.",
   "icon": "/static/images/is-alpha.jpg",
-  "images": [],
   "technologies": [
     "javascript"
   ],
-  "long_desc": "# Nsit-fest\nA react based frontend for NSIT fests.\n\n### Build instructions\nClone the repository.\nMake sure you have [npm](https://www.npmjs.com/) installed; then do\n```\nnpm install\n```\nThen run the start script to setup an express server and get Main.js served\n```\nnpm start\n```\n\n### Todo\n* [x] Use service worker to have the site working offline\n* [ ] Plan basic components required for the template\n* Event Calendar\n* Event Cards\n* Gallery\n* ...\n* [x] Form a repo\n\n### Contributors\n<!-- Contributors START\nDivjot_Singh bogas04 https://github.com/bogas04 code doc\nMayank_Badola mbad0la https://github.com/mbad0la code doc\nContributors END -->\n<!-- Contributors table START -->\n| [![Divjot Singh](https://avatars.githubusercontent.com/bogas04?s=100)<br /><sub>Divjot Singh</sub>](https://github.com/bogas04)<br />[💻](https://github.com/bogas04/nsit-fest/commits?author=bogas04) [📖](https://github.com/bogas04/nsit-fest/commits?author=bogas04) | [![Mayank Badola](https://avatars.githubusercontent.com/mbad0la?s=100)<br /><sub>Mayank Badola</sub>](https://github.com/mbad0la)<br />[💻](https://github.com/bogas04/nsit-fest/commits?author=mbad0la) [📖](https://github.com/bogas04/nsit-fest/commits?author=mbad0la) |\n| :---: | :---: |\n<!-- Contributors table END -->\n",
+  "long_desc": "# Nsit-fest \n\n",
   "contributors": [],
   "meta": {
 		"updated": "",
