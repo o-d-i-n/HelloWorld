@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, NotFoundRoute, Link, browserHistory } from 'react-router';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import { RepoCard, RepoCardList } from './components/RepoCardComponents'
 import { AccCard, AccCardList } from './components/AccCardComponents'
 import { RepoDetailsHeader, RepoDetails } from './components/RepoDetails.js'
@@ -13,7 +14,7 @@ class Details extends Component {
   }
 
   componentWillMount() {
-    this.props.navUpdate("TestRepo")
+    this.props.navUpdate("ToRepo")
   }
 
   render() {
@@ -55,7 +56,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    this.props.navUpdate("Home")
+    this.props.navUpdate("Projects")
   }
 
   render() {
@@ -93,7 +94,7 @@ class Wrapper extends Component {
     super(props)
     this.state = {
       "nav": {
-        "Home": true,
+        "Projects": true,
         "People": false,
         "404": false
       }
@@ -104,15 +105,14 @@ class Wrapper extends Component {
 
   changeRoute(newRoute) {
     console.log(newRoute)
-    let home = newRoute === "Home" ? true : false
+    let projects = newRoute === "Projects" ? true : false
     let people = newRoute === "People" ? true : false
-    let testrepo = newRoute === "TestRepo" ? true : false
+    let testrepo = newRoute === "ToRepo" ? true : false
     let notFound = newRoute === "404" ? true : false
     this.setState({
       "nav": {
-        "Home": home,
-        "People": people,
-        "404": notFound
+        "Projects": projects,
+        "People": people
       }
     })
   }
@@ -122,12 +122,13 @@ class Wrapper extends Component {
       <div>
         <div className="main-nav">
           <ul>
-            <li className={ this.state.nav["Home"] ? `active` : `off` }><Link to={`/`}>Home</Link></li>
+            <li className={ this.state.nav["Projects"] ? `active` : `off` }><Link to={`/`}>Projects</Link></li>
             <li className={ this.state.nav["People"] ? `active` : `off` }><Link to={`/people`}>People</Link></li>
-            <li className={ this.state.nav["404"] ? `active` : `off` }><Link to={`/not`}>404</Link></li>
           </ul>
         </div>
-        { React.cloneElement(this.props.children, { navUpdate: this.changeRoute }) }
+        <ReactCSSTransitionGroup component="div" transitionName="view-transition" transitionEnterTimeout={500} transitionLeaveTimeout={500}>
+          { React.cloneElement(this.props.children, { key: this.props.location.pathname, navUpdate: this.changeRoute }) }
+        </ReactCSSTransitionGroup>
       </div>
     )
   }
