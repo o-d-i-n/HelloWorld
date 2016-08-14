@@ -7,7 +7,10 @@
     "java"
   ],
 	"long_desc": "# HouseKeeper \n\n",
-  "contributors": [],
+  "contributors": {
+		"Karanbir Chahal": "karanchahal",
+		"Mayank Badola": "mbad0la"
+	},
   "meta": {
 		"updated": "",
 		"size": "",

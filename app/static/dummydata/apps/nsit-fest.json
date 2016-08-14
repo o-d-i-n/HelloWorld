@@ -9,7 +9,10 @@
     "html5"
   ],
   "long_desc": "# Nsit-fest \n A react based frontend for NSIT fests.\n\n",
-  "contributors": [],
+  "contributors": {
+		"Divjot Singh": "bogas04",
+		"Mayank Badola": "mbad0la"
+	},
   "meta": {
 		"updated": "",
 		"size": "",

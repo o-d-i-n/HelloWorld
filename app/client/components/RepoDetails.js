@@ -25,16 +25,18 @@ class RepoDetailsHeader extends Component {
               <h1>{this.props.name}</h1>
               <h4 className="tagline">{ this.props.desc }</h4>
 	            <ul className="categories">
-                { this.props.technologies.map(c => <li>{c}</li>) }
+							{ this.props.technologies.map(c => <li className="grey-text">{c}</li>) }
               </ul>
             </div>
           </div>
           <div className="row git-details">
-            <div className="col-md-6">
-	            <h7>Contributers</h7>
-              <p>{ this.props.contributors }</p>
+            <div className="col-md-8">
+	            <h6>Contributers</h6>
+							<ul className="categories">
+							{ Object.keys(this.props.contributors).map((c,k) => <li key={k}><a className="grey-text" href={"https://www.github.com/"+this.props.contributors[c]}>{c}</a></li>) }
+							</ul>
             </div>
-            <div className="text-right col-md-6">
+            <div className="text-right col-md-4">
               <a className="btn btn-default btn-lg github" href={`https://www.github.com/o-d-i-n/${this.props.name}`}>
                 <img src="/static/images/GitHub-Mark-64px.png"/>
                 <img src="/static/images/GitHub_Logo.png"/>
@@ -102,6 +104,7 @@ class RepoDetails extends Component {
     //TODO: Look for a better solution
     this.state = {
       "technologies": [],
+			"contributors": {},
       "images": [],
       "meta": {},
       "long_desc": ""

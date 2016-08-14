@@ -7,7 +7,9 @@
     "javascript"
   ],
   "long_desc": "# Basic Speed Tester\n  An accurate and basic speed tester\n  \n  Without having to host a SpeedOfMe speed test on your server, you are now able to run a [SpeedOf.Me](http://www.speedof.me) speed test right from your website. It is a JavaScript speed test API \n\n",
-  "contributors": [],
+  "contributors": {
+		"Prabhakar Gupta": "Prabhakar267"
+	},
   "meta": {
 		"updated": "",
 		"size": "",

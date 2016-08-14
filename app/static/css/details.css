@@ -21,15 +21,24 @@
   list-style-type: none;
   padding-left: 0;
 }
-#details  ul.categories>li{
+
+#details  .grey-text{
     min-width:50px;
     margin-right:10px;
     margin-top: 5px;
-    padding:0% 2%;
+    padding:0 10px;
     border-radius:5px;
     text-align: center;
     background-color:#a3a3a3;
     color:white;
+}
+
+a.grey-text{
+    display: inline-block;
+}
+
+a.grey-text:hover{
+    text-decoration: none;
 }
 
 #details  .icon{
@@ -41,7 +50,7 @@
     padding-left: 0;
 }
 
-#details h7{
+#details h6{
     font-family: sans-serif;
     font-weight: bold;
     padding:0px;
@@ -62,22 +71,6 @@
 	margin-top: 2% !important;
 }
 
-#details .gallery>ul{
-    display:flex;
-    flex-flow:row;
-    list-style-type:none;
-    padding-left:0;
-    overflow-x:scroll;
-}
-
-#details .gallery>ul>li{
-    margin-right: 10px;
-}
-
-#details .gallery>ul>li>img{
-    height: 200px;
-}
-
 #details .details, .details-content{
     font-size: 15px;
 }
@@ -86,26 +79,11 @@
 	text-transform: capitalize;
 }
 
-#details section.metal{
+#details section.meta>ul{
     list-style-type:none;
     padding-left: 0;
 }
 
-tr:nth-child(even){
-	background-color: #e2e2e2;
-}
-
-td, th{
-	border-collapse: separate;
-	padding-left: 2%;
-	padding-right: 2%;
-	text-align: left !important;
-	border: 1px solid #e2e2e2;
-}
-
-table{
-	table-layout: auto;
-}
 @media only screen and (max-width:768px){
 	#details .github{
 		height:10%;

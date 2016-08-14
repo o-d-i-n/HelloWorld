@@ -9,7 +9,12 @@
     "html5"
   ],
   "long_desc": "# CloudShopper \n\n",
-  "contributors":[],
+  "contributors":{
+		"Karanbir Chahal": "karanchahal",
+		"Shubham Arora": "codemerlin19",
+		"Saksham Kalsi": "qlzqlzqlz",
+		"Rohit Gohri": "rohit-95"
+	},
   "meta":{
 		"updated": "",
 		"size": "",
