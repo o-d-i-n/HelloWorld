@@ -84,6 +84,15 @@ a.grey-text:hover{
     padding-left: 0;
 }
 
+.github-link {
+	float: right;
+	text-decoration: none!important;
+}
+
+.github-link:hover {
+	cursor: pointer;
+}
+
 @media only screen and (max-width:768px){
 	#details .github{
 		height:10%;

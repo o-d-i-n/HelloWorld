@@ -22,7 +22,7 @@ class RepoDetailsHeader extends Component {
         <div className="col-md-9">
           <div className="row">
             <div className="head">
-              <h1>{this.props.name}</h1>
+              <h1>{this.props.name}<a target="_blank" className="github-link" href={`https://www.github.com/o-d-i-n/${this.props.name}`}><i className="devicon-github-plain-wordmark colored"></i></a></h1>
               <h4 className="tagline">{ this.props.desc }</h4>
 	            <ul className="categories">
 							{ this.props.technologies.map(c => <li className="grey-text">{c}</li>) }
@@ -30,17 +30,11 @@ class RepoDetailsHeader extends Component {
             </div>
           </div>
           <div className="row git-details">
-            <div className="col-md-8">
+            <div className="col-md-12">
 	            <h6>Contributers</h6>
 							<ul className="categories">
 							{ Object.keys(this.props.contributors).map((c,k) => <li key={k}><a className="grey-text" href={"https://www.github.com/"+this.props.contributors[c]}>{c}</a></li>) }
 							</ul>
-            </div>
-            <div className="text-right col-md-4">
-              <a className="btn btn-default btn-lg github" href={`https://www.github.com/o-d-i-n/${this.props.name}`}>
-                <img src="/static/images/GitHub-Mark-64px.png"/>
-                <img src="/static/images/GitHub_Logo.png"/>
-              </a>
             </div>
           </div>
         </div>
