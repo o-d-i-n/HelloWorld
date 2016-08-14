@@ -1,12 +1,14 @@
 {
-  "name": "is-alpha",
-  "type": "JavaScript Module",
-  "desc": "String Validation Module.",
-  "icon": "/static/images/is-alpha.jpg",
+  "name": "nsit-fest",
+  "type": "React Sandbox",
+  "desc": "React-based Frontend for NSIT fests.",
+  "icon": "/static/images/nsit.jpg",
   "technologies": [
-    "javascript"
+    "css3",
+    "react",
+    "html5"
   ],
-  "long_desc": "# Nsit-fest \n\n",
+  "long_desc": "# Nsit-fest \n A react based frontend for NSIT fests.\n\n",
   "contributors": [],
   "meta": {
 		"updated": "",

@@ -7,7 +7,7 @@
     "coffeescript",
     "atom"
   ],
-  "long_desc": "# All-contributors-atom \n\n",
+  "long_desc": "# All-contributors-atom\n Atom plugin for easy implementation of [all-contributors spec](https://github.com/kentcdodds/all-contributors) within atom editor.\n\n Hacked using Atom's API, inspired by open source contributors :)   \n\n",
   "contributors": [],
   "meta": {
 		"updated": "Now",

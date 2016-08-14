@@ -6,7 +6,7 @@
   "technologies": [
     "javascript"
   ],
-  "long_desc": "# is-alphabet \n\n",
+  "long_desc": "# is-alphabet \n Checks whether passed string contains alphabets, digits and vocabulory.\n\n",
   "contributors": [],
   "meta": {
 		"updated": "",
