@@ -28,14 +28,16 @@ class RepoCard extends Component {
 			      <h3>{ this.props.content.name }</h3>
 			      <p>{ this.props.content.type }</p>
 		      </figelement>
+
+          <div className="stack-list">
+            {
+              this.props.content.technologies.map((v,k) => {
+                return <i key={k} className={`devicon-${v}-plain colored`}></i>
+              })
+            }
+          </div>
+
         </figure>
-        <div className="stack-list">
-          {
-            this.props.content.technologies.map((v,k) => {
-              return <i key={k} className={`devicon-${v}-plain colored`}></i>
-            })
-          }
-        </div>
       </div>
     )
   }
