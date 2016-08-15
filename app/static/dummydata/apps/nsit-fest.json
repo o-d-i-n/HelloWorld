@@ -1,0 +1,22 @@
+{
+  "name": "nsit-fest",
+  "type": "React Sandbox",
+  "desc": "React-based Frontend for NSIT fests.",
+  "icon": "/static/images/nsit.jpg",
+  "technologies": [
+    "css3",
+    "react",
+    "html5"
+  ],
+  "long_desc": "# Nsit-fest \n A react based frontend for NSIT fests.\n\n",
+  "contributors": {
+		"Divjot Singh": "bogas04",
+		"Mayank Badola": "mbad0la"
+	},
+  "meta": {
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

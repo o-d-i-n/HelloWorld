@@ -1,0 +1,20 @@
+{
+  "name": "EvilWords",
+  "type": "Command-Line Tool",
+  "desc": "Python-App that takes care of words you type.",
+  "icon": "/static/images/evilWords.jpg",
+  "technologies": [
+    "python"
+  ],
+  "long_desc": "# EvilWords \n\n",
+  "contributors": {
+		"da230896": "da230896",
+		"A. Priyadarshi": "amaneureka"
+	},
+  "meta":{
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

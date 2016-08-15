@@ -1,0 +1,22 @@
+{
+	"name": "DevBible",
+	"type": "Devlopment Guide",
+	"desc": "For the devs, by the devs.",
+	"icon": "/static/images/DevBible.jpg",
+	"technologies": [],
+	"long_desc": "# DevBible \n Some Holy Sermons from The Dev Community. \n \n DevBible is a one stop shop for dev references. It aims to be an extensive documentation so that no developer is ever lost.",
+	"contributors": {
+					"Divjot Singh": "bogas04",
+					"Mayank Badola": "mbad0la",
+					"Karanbir Chahal": "karanchahal",
+					"A. Priyadarshi": "amaneureka",
+					"Swati Garg": "swati4star",
+					"Abhinav Bansal": "ab-decoded"
+	},
+	"meta": {
+		"updated": "20-Jul-2016",
+		"size": "3M",
+		"version": "1.0.0",
+		"platform": "All"
+	}
+}

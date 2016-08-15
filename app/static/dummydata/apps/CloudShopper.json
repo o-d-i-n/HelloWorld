@@ -1,0 +1,24 @@
+{
+  "name": "CloudShopper",
+  "type": "Web/Mobile App",
+  "desc": "An online companion to an offline shopping experience.",
+  "icon": "/static/images/DevBible.jpg",
+  "technologies": [
+    "css3",
+    "angularjs",
+    "html5"
+  ],
+  "long_desc": "# CloudShopper \n\n",
+  "contributors":{
+		"Karanbir Chahal": "karanchahal",
+		"Shubham Arora": "codemerlin19",
+		"Saksham Kalsi": "qlzqlzqlz",
+		"Rohit Gohri": "rohit-95"
+	},
+  "meta":{
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

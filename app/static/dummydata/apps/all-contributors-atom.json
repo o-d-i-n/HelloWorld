@@ -1,0 +1,22 @@
+{
+  "name": "all-contributors-atom",
+  "type": "Atom Package",
+  "desc": "Atom plugin for all-contributors spec.",
+  "icon": "/static/images/allcontributors.gif",
+  "technologies": [
+    "coffeescript",
+    "atom"
+  ],
+  "long_desc": "# All-contributors-atom\n Atom plugin for easy implementation of [all-contributors spec](https://github.com/kentcdodds/all-contributors) within atom editor.\n\n Hacked using Atom's API, inspired by open source contributors :)   \n\n",
+  "contributors": {
+		"Mayank Badola": "mbad0la",
+		"Divjot Singh": "bogas04",
+		"Tam Love": "taml"
+	},
+  "meta": {
+		"updated": "Now",
+		"size": "1 MB",
+		"version": "0.0.1",
+		"platform": "Ubuntu"
+	}
+}
