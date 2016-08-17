@@ -19,9 +19,11 @@ class Details extends Component {
 
   render() {
     return (
-      <section id="details" className="content col-md-offset-2 col-md-8">
-        <RepoDetails n={this.props.params.appName}/>
-      </section>
+        <div className="row">
+          <section id="details" className="content col-md-offset-2 col-md-8">
+            <RepoDetails n={this.props.params.appName}/>
+          </section>
+        </div>
     )
   }
 
@@ -40,9 +42,7 @@ class People extends Component {
 
   render() {
     return (
-      <div className="container">
         <AccCardList />
-      </div>
     )
   }
 
@@ -61,9 +61,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
         <RepoCardList />
-      </div>
     )
   }
 
@@ -126,7 +124,7 @@ class Wrapper extends Component {
             <li className={ this.state.nav["People"] ? `active` : `off` }><Link to={`/people`}>People</Link></li>
           </ul>
         </div>
-        <ReactCSSTransitionGroup component="div" transitionName="view-transition" transitionEnterTimeout={500} transitionLeaveTimeout={500}>
+        <ReactCSSTransitionGroup component="div" style={{ position: 'relative' }} className="container" transitionName="view-transition" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
           { React.cloneElement(this.props.children, { key: this.props.location.pathname, navUpdate: this.changeRoute }) }
         </ReactCSSTransitionGroup>
       </div>

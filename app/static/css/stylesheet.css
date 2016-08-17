@@ -81,6 +81,10 @@ body {
 	margin-bottom: 5px;
 }
 
+#details {
+	min-height: calc(100% - 100px);
+}
+
 .repo-card > figure {
   margin: 0px;
   background-color: #ffffff;
@@ -320,6 +324,9 @@ body {
 }
 
 .view-transition-enter {
+	position: absolute;
+	width: 100%;
+	top: 0px;
   opacity: 0.01;
 }
 
