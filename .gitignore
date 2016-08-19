@@ -5,3 +5,5 @@ bundle.js
 .*
 *~
 *.log
+*.sublime-project
+*.sublime-workspace
