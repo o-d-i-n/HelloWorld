@@ -7,17 +7,20 @@ from django.template.defaultfilters import slugify
 ##########################################################
 #MEMBERS
 ##########################################################
-#  {
-#   "name": "Abhinav Bansal",
-#   "post": "Collaborator",
-#   "img": "/static/images/Abhinav-Bansal.jpg",
-#   "contact": [
-#     "twitter",
-#     "github"
-#   ],
-#   "contact_link": [
-#     "https://github.com/ab-decoded"
-#   ]
+# {
+# 	name: "Abhinav Bansal",
+# 	post: "Collaborator",
+# 	img: "/media/mockups/cheater_rfgubPd.jpg",
+# 	contacts: [
+# 		{
+# 			name: "github",
+# 			link: "http://www.github.com/ab-decoded"
+# 		},
+# 		{
+# 			name: "facebook",
+# 			link: "http://facebook.com/abhinavbansal.1217"
+# 		}
+# 	]
 # }
 class Contact(models.Model):
 	name=models.CharField(max_length=50)
@@ -37,37 +40,39 @@ class Member(models.Model):
 #PROJECTS
 ##########################################################
 # {
-# 	"name": "DevBible",
-# 	"type": "Devlopment Guide",
-# 	"desc": "For the devs, by the devs.",
-# 	"icon": "/static/images/DevBible.jpg",
-# 	"technologies": [],
-# 	"long_desc": "# DevBible \n Some Holy Sermons from The Dev Community. \n \n DevBible is a one stop shop for dev references. It aims to be an extensive documentation so that no developer is ever lost.",
-# 	"contributors": {
-# 					"Divjot Singh": "bogas04",
-# 					"Mayank Badola": "mbad0la",
-# 					"Karanbir Chahal": "karanchahal",
-# 					"A. Priyadarshi": "amaneureka",
-# 					"Swati Garg": "swati4star",
-# 					"Abhinav Bansal": "ab-decoded"
-# 	},
-# 	"meta": {
-# 		"updated": "20-Jul-2016",
-# 		"size": "3M",
-# 		"version": "1.0.0",
-# 		"platform": "All"
-# 	}
+# slug: "nyan-cat",
+# name: "Nyan Cat",
+# type: "Lol",
+# desc: "Short descrption",
+# icon: "/media/icons/cheater.jpg",
+# technologies: [
+# 	"Meteor",
+# 	"Mongo"
+# ],
+# long_desc: "Long description...",
+# contributors: [
+# 	 {
+#	 	name: "Abhinav Bansal",
+#	 	github: "ab-decoded"
+#	 }
+# ],
+# "meta": {
+# 	"updated": "20-Jul-2016",
+# 	"size": "3M",
+# 	"version": "1.0.0",
+# 	"platform": "All"
+# }
 # }
 class Technology(models.Model):
 	name=models.CharField(max_length=50,primary_key=True)
 	def __str__(self):
 		return self.name
 
-# class Contributor(models.Model):
-# 	name=models.CharField(max_length=50)
-# 	username=models.CharField(max_length=50,primary_key=True)
-# 	def __str__(self):
-# 		return self.name+"("+self.username+")"
+class Contributor(models.Model):
+	name=models.CharField(max_length=50)
+	github=models.CharField(max_length=50)
+	def __str__(self):
+		return self.name + "(" + self.github + ")"
 
 class Project(models.Model):
 	slug=models.CharField(max_length=100,blank=True,primary_key=True)
@@ -75,9 +80,9 @@ class Project(models.Model):
 	type=models.CharField(max_length=50)
 	desc=models.TextField()
 	icon=models.ImageField(upload_to="icons",null=True)
-	technologies=models.ManyToManyField(Technology)
+	technologies=models.ManyToManyField(Technology,blank=True)
 	long_desc=models.TextField(blank=True)
-	members=models.ManyToManyField(Member)
+	contributors=models.ManyToManyField(Contributor)
 	meta=JSONField()
 	def __str__(self):
 		return self.name+"("+self.desc+")"
