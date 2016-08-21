@@ -6,5 +6,5 @@ from . import views
 
 urlpatterns=[
 	url(r'^$',views.index,name='index'),
-	url(r'^.*$',views.index,name='redirect')
+	url(r'^(?!api$|admin$).*$',views.index,name='redirect')
 ]

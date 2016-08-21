@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
+
+#details .row {
+	margin: 0;
+}
+
+#details {
+    background-color: white;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#details .tagline {
+    font-weight: normal;
+    font-family: 'Roboto';
+}
+
+#details  ul.categories {
+  display: flex;
+  flex-flow: wrap;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#details  .grey-text {
+    min-width: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 0 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #a3a3a3;
+    color: white;
+}
+
+a.grey-text {
+    display: inline-block;
+		text-decoration: none!important;
+}
+
+#details .icon {
+  min-height: 200px !important;
+}
+
+#details .git-details div {
+    margin: 10px 0px 0px 0px;
+    padding-left: 0;
+}
+
+#details h6 {
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 0px;
+}
+
+#details .github {
+    margin-left: auto;
+    height: 60px;
+}
+
+#details .github>img {
+    height: 48px;
+		position: relative;
+		bottom: 6px;
+}
+
+#details>div>*:not(hr) {
+	margin-top: 2% !important;
+}
+
+#details .details, .details-content {
+    font-size: 15px;
+}
+
+#details .details-heading {
+	text-transform: capitalize;
+}
+
+#details section.meta>ul {
+    list-style-type:none;
+    padding-left: 0;
+}
+
+.github-link {
+	float: right;
+	text-decoration: none!important;
+}
+
+.github-link:hover {
+	cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+	#details .github {
+		height:10%;
+	}
+
+	#details .meta>header {
+		text-align: center;
+	}
+}

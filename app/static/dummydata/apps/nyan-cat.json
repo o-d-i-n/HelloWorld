@@ -1,0 +1,20 @@
+{
+  "name": "nyan-cat",
+  "type": "Command-Line Tool",
+  "desc": "Modern `cat` for modern devs.",
+  "icon": "/static/images/nyan-cat.gif",
+  "technologies": [
+    "nodejs"
+  ],
+  "long_desc": "# nyan-cat 😽 \n\nModern `cat` for developers.\n\nEver used cat for quick code reveal and thought \"Man, wouldn't it be cool if some idiots wasted their time on building an cli tool to generate color coded output for `cat`\" ? Well, we are those idiots and this projects aims to cater the need. \n\n",
+  "contributors": {
+		"Divjot Singh": "bogas04",
+		"Mayank Badola": "mbad0la"
+	},
+  "meta": {
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "HelloWorld",
+  "type": "Web-Application",
+  "desc": "A webapp built with trending frameworks.",
+  "icon": "/static/images/odin2.png",
+  "technologies": [
+    "bootstrap",
+    "css3",
+    "django",
+    "html5",
+    "react"
+  ],
+  "long_desc": "# HelloWorld \nHola Traveler! Isn't this website beautiful? :P\n\n HelloWorld is the public platform for ODIN. It is built using our community's immense love for open source and some trending frameworks ofcourse.",
+  "contributors": {
+		"Mayank Badola": "mbad0la",
+		"Abhinav Bansal": "ab-decoded"
+	},
+  "meta":{
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}

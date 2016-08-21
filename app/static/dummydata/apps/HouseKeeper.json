@@ -1,0 +1,20 @@
+{
+  "name": "HouseKeeper",
+  "type": "Java Application",
+  "desc": "Java-App made to handle the boring parts of college.",
+  "icon": "/static/images/DevBible.jpg",
+  "technologies": [
+    "java"
+  ],
+	"long_desc": "# HouseKeeper \n\n",
+  "contributors": {
+		"Karanbir Chahal": "karanchahal",
+		"Mayank Badola": "mbad0la"
+	},
+  "meta": {
+		"updated": "",
+		"size": "",
+		"version": "",
+		"platform": ""
+	}
+}
