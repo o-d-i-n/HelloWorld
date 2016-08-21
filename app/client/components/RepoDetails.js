@@ -25,7 +25,7 @@ class RepoDetailsHeader extends Component {
               <h1>{this.props.name}<a target="_blank" className="github-link" href={`https://www.github.com/o-d-i-n/${this.props.name}`}><i className="devicon-github-plain-wordmark colored"></i></a></h1>
               <h4 className="tagline">{ this.props.desc }</h4>
 	            <ul className="categories">
-							{ this.props.technologies.map(c => <li className="grey-text">{c}</li>) }
+							{ this.props.technologies.map((c,k) => <li key={k} className="grey-text">{c}</li>) }
               </ul>
             </div>
           </div>
@@ -33,7 +33,7 @@ class RepoDetailsHeader extends Component {
             <div className="col-md-12">
 	            <h6>Contributers</h6>
 							<ul className="categories">
-							{ Object.keys(this.props.contributors).map((c,k) => <li key={k}><a className="grey-text" href={"https://www.github.com/"+this.props.contributors[c]}>{c}</a></li>) }
+							{ this.props.contributors.map((c,k) => <li key={k}><a target="_blank" className="grey-text" href={"https://www.github.com/"+c.github}>{c.name}</a></li>) }
 							</ul>
             </div>
           </div>
@@ -65,18 +65,28 @@ class RepoDetailsMeta extends Component {
 
 	constructor(props) {
 		super(props)
-		this.state={}
+		this.state = {}
 	}
 
 	render() {
 
-		let rows=[];
+		let rows = []
+    let metaObj = this.props.meta.replace(/u'(?=[^:]+')/g, "'")
 
-		for (const index in this.props.meta) {
+    metaObj = metaObj.replace(/'/g, '"')
+
+    try {
+      metaObj = JSON.parse(metaObj)
+    }
+    catch(e) {
+      metaObj = {}
+    }
+
+		for (const index in metaObj) {
 			rows.push(
-        <li className="text-center col-md-3 col-xs-12 col-sm-4">
+        <li key={index} className="text-center col-md-3 col-xs-12 col-sm-4">
           <h3 className="details-heading">{ index }</h3>
-          <div className="details-content">{ this.props.meta[index] }</div>
+          <div className="details-content">{ metaObj[index] }</div>
 			  </li>
       )
 		}
@@ -97,16 +107,20 @@ class RepoDetails extends Component {
     //It's just a workaround to stop TypeErrors.
     //TODO: Look for a better solution
     this.state = {
+      "slug": "",
+      "name": "",
+      "type": "",
+      "icon": "",
+      "desc": "",
+      "long_desc": "",
       "technologies": [],
-			"contributors": {},
-      "images": [],
-      "meta": {},
-      "long_desc": ""
+      "contributors": [],
+      "meta": ""
     }
   }
 
-  componentWillMount(){
-    axios.get(`/static/dummydata/apps/${this.props.n}.json`)
+  componentWillMount() {
+    axios.get(`/api/projects/${this.props.n}/`)
       .then(res => this.setState(res.data))
       .catch(res => console.log(res))
   }

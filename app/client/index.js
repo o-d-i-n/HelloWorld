@@ -80,7 +80,10 @@ class NoMatch extends Component {
 
   render() {
     return (
-      <p>Invalid scope! Go back to</p>
+      <div className="err-div">
+        <i className="fa fa-exclamation-circle" aria-hidden="true"></i>
+        <p>Looks like you're snooping around mate!</p>
+      </div>
     )
   }
 
@@ -102,7 +105,6 @@ class Wrapper extends Component {
   }
 
   changeRoute(newRoute) {
-    console.log(newRoute)
     let projects = newRoute === "Projects" ? true : false
     let people = newRoute === "People" ? true : false
     let testrepo = newRoute === "ToRepo" ? true : false

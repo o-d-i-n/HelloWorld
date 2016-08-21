@@ -11,7 +11,7 @@ class RepoCard extends Component {
 
   render() {
     let cardImg = {
-      backgroundImage: 'url(' + this.props.content.img + ')',
+      backgroundImage: 'url(' + this.props.content.icon + ')',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -20,7 +20,7 @@ class RepoCard extends Component {
     return (
       <div className="repo-card col-md-4 col-lg-4">
         <figure>
-		      <Link className="pic" to={`/apps/${this.props.content.name}`}>
+		      <Link className="pic" to={`/apps/${this.props.content.slug}`}>
 			       <div style={ cardImg } className="img"></div>
 			       <span>{ this.props.content.desc }</span>
           </Link>
@@ -54,8 +54,8 @@ class RepoCardList extends Component {
   }
 
   componentWillMount() {
-    axios.get('/static/dummydata/projects.json')
-      .then(res => this.setState(res.data))
+    axios.get('/api/projects/')
+      .then(res => this.setState({"cards":res.data}))
       .catch(res => console.log(res))
   }
 

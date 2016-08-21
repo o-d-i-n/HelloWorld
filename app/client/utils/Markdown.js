@@ -17,15 +17,14 @@ class Markdown extends Component {
 	}
 
 	render() {
-		console.log("In Markdown");
-		const  text  = this.props.desc,
-		html = marked(text || '');
-		console.log(text);
+		const  text  = this.props.desc.replace(/\\n/g,"\n")
+		const html = marked(text || '')
+
 		return (
 			<div>
 				<div dangerouslySetInnerHTML={{__html: html}}/>
 			</div>
-		);
+		)
 	}
 }
 
