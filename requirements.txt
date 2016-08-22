@@ -1,0 +1,6 @@
+six
+Pillow
+django
+djangorestframework
+Django-mysql
+mysql-python
