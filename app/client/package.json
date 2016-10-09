@@ -7,16 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mbad0la/HelloWorld.git"
-  },
-  "author": "Mayank Badola",
+  "repository": "o-d-i-n/HelloWorld",
+  "author": "Open Development Initiative - NSIT",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mbad0la/HelloWorld/issues"
-  },
-  "homepage": "https://github.com/mbad0la/HelloWorld#readme",
   "dependencies": {
     "axios": "^0.12.0",
     "babel-core": "^6.13.2",
