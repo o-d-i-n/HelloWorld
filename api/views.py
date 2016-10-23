@@ -32,7 +32,7 @@ def project_details(request,project_slug):
 
 def members(request):
     if request.method == "GET":
-        members = MemberSerializer(instance=Member.objects.all(), many=True)
+        members = MemberSerializer(instance=Member.objects.order_by('name'), many=True)
         return HttpResponse(json.dumps(members.data))
     else:
         return HttpResponseForbidden('allowed only via GET')
