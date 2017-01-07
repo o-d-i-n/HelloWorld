@@ -4,7 +4,8 @@ import { Router, Route, IndexRoute, NotFoundRoute, Link, browserHistory } from '
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import { RepoCard, RepoCardList } from './components/RepoCardComponents'
 import { AccCard, AccCardList } from './components/AccCardComponents'
-import { RepoDetailsHeader, RepoDetails } from './components/RepoDetails.js'
+import { RepoDetailsHeader, RepoDetails } from './components/RepoDetails'
+import { IssuesWrapper } from './components/IssueComponents'
 
 class Details extends Component {
 
@@ -67,6 +68,23 @@ class App extends Component {
 
 }
 
+class Issues extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  componentWillMount() {
+    this.props.navUpdate("Issues")
+  }
+
+  render() {
+    return <IssuesWrapper />
+  }
+
+}
+
 class NoMatch extends Component {
 
   constructor(props) {
@@ -108,11 +126,13 @@ class Wrapper extends Component {
     let projects = newRoute === "Projects" ? true : false
     let people = newRoute === "People" ? true : false
     let testrepo = newRoute === "ToRepo" ? true : false
+    let issues = newRoute === "Issues" ? true : false
     let notFound = newRoute === "404" ? true : false
     this.setState({
       "nav": {
         "Projects": projects,
-        "People": people
+        "People": people,
+        "Issues": issues
       }
     })
   }
@@ -124,6 +144,7 @@ class Wrapper extends Component {
           <ul>
             <li className={ this.state.nav["Projects"] ? `active` : `off` }><Link to={`/`}>Projects</Link></li>
             <li className={ this.state.nav["People"] ? `active` : `off` }><Link to={`/people`}>People</Link></li>
+            <li className={ this.state.nav["Issues"] ? `active` : `off` }><Link to={`/issues`}>Issues</Link></li>
           </ul>
         </div>
         <ReactCSSTransitionGroup component="div" style={{ position: 'relative' }} className="container" transitionName="view-transition" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
@@ -140,6 +161,7 @@ ReactDOM.render((
     <Route path="/" component={Wrapper}>
       <IndexRoute component={App}/>
       <Route path="/people" component={People}/>
+      <Route path="/issues" component={Issues}/>
       <Route path="/apps/:appName" component={Details}/>
       <Route path="*" component={NoMatch}/>
     </Route>
