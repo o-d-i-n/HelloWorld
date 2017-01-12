@@ -8,4 +8,5 @@ urlpatterns=[
 	url(r'^projects/$',views.projects,name='projects'),
 	url(r'^projects/(?P<project_slug>[\w-]+)/$',views.project_details,name='project_detail'),
 	url(r'^members/$',views.members,name="members"),
+	url(r'^issues/$',views.issues,name="issues"),
 ]
