@@ -2,6 +2,7 @@ node_modules/
 deploy/
 *.pyc
 bundle.js
+bundle.js.gz
 .*
 *~
 *.log
